@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Inmobiliaria</string>
+    <string name="inmueble1Titulo">Inmueble 1</string>
+    <string name="inmueble1Descripcion">Casa en venta</string>
+    <string name="inmueble1Precio">$1500</string>
+    <string name="inmueble2Titulo">Inmueble 2</string>
+    <string name="inmueble2Descripcion">Casa en alquiler</string>
+    <string name="inmueble2Precio">$5000</string>
+    <string name="inmueble3Titulo">Inmueble 3</string>
+    <string name="inmueble3Descripcion">Casa en excelente estado</string>
+    <string name="inmueble3Precio">$154700</string>
+    <string name="inmueble4Titulo">Inmueble 4</string>
+    <string name="inmueble4Descripcion">Dpto en alquiler</string>
+    <string name="inmueble4Precio">$58150</string>
+    <string name="inmueble5Titulo">Inmueble 5</string>
+    <string name="inmueble5Descripcion">Casa en venta</string>
+    <string name="inmueble5Precio">$35410</string>
+    <string name="title_activity_main2">MainActivity2</string>
+</resources>
