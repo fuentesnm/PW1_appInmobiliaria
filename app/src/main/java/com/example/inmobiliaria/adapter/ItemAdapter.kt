@@ -1,12 +1,15 @@
 package com.example.inmobiliaria.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.inmobiliaria.DetalleInmueble
+import com.example.inmobiliaria.DetalleInmueble.Companion.INMUEBLE_ID
 import com.example.inmobiliaria.R
 import com.example.inmobiliaria.model.Inmuebles
 
@@ -32,6 +35,12 @@ class ItemAdapter(
         holder.textView1.text = context.resources.getString(item.stringDescripcion)
         holder.textView2.text = context.resources.getString(item.stringPrecio)
         holder.imageView.setImageResource(item.imageResoursceId)
+        holder.imageView.setOnClickListener {
+            val context = holder.imageView.context
+            val intent = Intent(context, DetalleInmueble::class.java)
+            intent.putExtra(DetalleInmueble.INMUEBLE_ID, position.toString())
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount() = dataSet.size
